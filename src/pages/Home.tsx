@@ -1,7 +1,7 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonRow, IonCol, IonToolbar, IonButtons, IonButton, IonIcon, IonInput } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonRow, IonCol, IonToolbar, IonButtons, IonButton, IonIcon, IonModal } from '@ionic/react';
 import Button from '../components/Button';
 import Player from '../components/Player';
-import Modal from 'react-modal';
+//import Modal from 'react-modal';
 import DiceScore from '../components/DiceScore';
 import Canvas from '../components/Canvas';
 import { addCircleOutline } from 'ionicons/icons';
@@ -173,12 +173,9 @@ const Home: React.FC = () => {
             icon={addCircleOutline}
             label="new game" 
           />   
-          <Modal 
+          <IonModal 
             isOpen={modalIsOpen}
-            onRequestClose={closeModal}
-            appElement={document.getElementById('root') as HTMLElement}
-            ariaHideApp={true}
-            style={modalStyles}
+            cssClass='modalStyles'
             >
             <IonHeader>
                 <IonToolbar>
@@ -200,7 +197,7 @@ const Home: React.FC = () => {
               </div>
             </IonContent>
 
-        </Modal>
+        </IonModal>
         </div>
       </IonHeader>
       <IonContent fullscreen> 
