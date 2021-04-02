@@ -130,7 +130,7 @@ const Home: React.FC = () => {
     const hold = () => {
       switch (currentPlayer){
         case 'p1' :
-          setP1Score(P1Current)
+          setP1Score(P1Score + P1Current)
           setP2Icon(ellipse);
           setP1Icon('null');
           setP1Current(0);
@@ -146,7 +146,7 @@ const Home: React.FC = () => {
             }
           break;
         case 'p2' :
-          setP2Score(P2Current)
+          setP2Score(P2Score + P2Current)
           setP1Icon(ellipse);
           setP2Icon('null');
           setP2Current(0);
