@@ -1,5 +1,6 @@
 {
   "name": "dice",
+  "homepage": "https://wa75019.github.io/React-diceGame",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -41,6 +42,8 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
+    "predeploy" : "npm run build" ,    
+    "deploy" : "gh-pages -d build" ,
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -66,7 +69,8 @@
   },
   "devDependencies": {
     "@capacitor/cli": "2.4.7",
-    "@types/react-modal": "^3.12.0"
+    "@types/react-modal": "^3.12.0",
+    "gh-pages": "^3.1.0"
   },
   "description": "An Ionic project"
 }
