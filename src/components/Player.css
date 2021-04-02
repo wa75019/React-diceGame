@@ -1,0 +1,10 @@
+.score{
+    font-size: 80px !important;
+    color: #F73E53;
+}
+
+    @media (min-width: 768px) { 
+        .score{
+            font-size: 140px i !important;
+        }
+    }

@@ -1,0 +1,19 @@
+.currentScore{
+    width: 200px;
+    height: 100px;
+    background-color: #F73E53;
+}
+.currentScore p{
+    color: white;
+    font-size: 24px;
+}
+
+    @media (min-width: 768px) { 
+        .currentScore p{
+            font-size: 50px;
+        }
+        .currentScore{
+            width: 250px;
+            height: 140px;
+        }
+    }
